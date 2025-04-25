@@ -14,13 +14,13 @@ const Footer = () => {
       <div className="container mx-auto px-4">
         <div className="flex flex-col items-center mb-12">
           <img 
-            src="https://i.ibb.co/GvG8xYx3/dog03333.webp" 
+            src="https://i.ibb.co/995Cg1cz/dog0222.webp" 
             alt="Cachorro calmo e tranquilo" 
             className="w-full max-w-xs rounded-xl shadow-lg mb-8"
           />
           
           <Button 
-            className="shine-btn text-base md:text-lg py-6 px-8 rounded-xl mb-12"
+            className="shine-btn text-base py-4 px-6 md:py-6 md:px-8 rounded-xl mb-12 whitespace-normal"
             onClick={scrollToPricing}
           >
             QUERO MUDAR A VIDA DO MEU CÃO AGORA

@@ -4,11 +4,6 @@ import { Shield, X, Check } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
 const PricingSection = () => {
-  const bonuses = [
-    "Receita extra: Smoothie natural anti-estresse para cães",
-    "Acesso vitalício a todas as futuras atualizações do protocolo"
-  ];
-
   const notForYou = [
     "Você acha normal viver no estresse",
     "Você gosta de ter casa destruída",
@@ -44,7 +39,7 @@ const PricingSection = () => {
             </div>
             
             <div className="mb-12 max-w-2xl mt-32 md:mt-0">
-              <h3 className="text-2xl font-bold mb-4">Menos que:</h3>
+              <h3 className="text-2xl font-bold mb-4 mt-20 md:mt-0">Menos que:</h3>
               <ul className="space-y-3">
                 <li className="flex items-start gap-3">
                   <div className="h-6 w-6 bg-dog-primary/20 rounded-full flex items-center justify-center text-dog-primary flex-shrink-0">
@@ -95,7 +90,7 @@ const PricingSection = () => {
                 </p>
               </div>
               
-              <Button className="shine-btn w-full sm:w-auto py-6 px-8 text-base md:text-lg rounded-xl animate-pulse-glow overflow-hidden whitespace-normal bg-green-500 hover:bg-green-600">
+              <Button className="shine-btn w-full sm:w-auto py-4 px-6 md:py-6 md:px-8 text-base md:text-lg rounded-xl animate-pulse-glow overflow-hidden whitespace-normal bg-green-500 hover:bg-green-600">
                 QUERO O CÃO SEM STRESS™ – R$27 NO PIX
               </Button>
               
@@ -161,13 +156,6 @@ const PricingSection = () => {
               Ou tu muda a tua vida, ou continua sendo palhaço na mão do latido.
               Decide logo, miserável."
             </blockquote>
-            
-            <Button 
-              className="shine-btn text-base md:text-lg py-6 px-8 rounded-xl bg-green-500 hover:bg-green-600"
-              onClick={scrollToPricing}
-            >
-              QUERO O CÃO SEM STRESS™ – R$27 NO PIX
-            </Button>
           </div>
         </div>
       </div>

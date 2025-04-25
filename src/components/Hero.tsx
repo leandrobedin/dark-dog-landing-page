@@ -69,7 +69,7 @@ const Hero = () => {
             
             <div className="w-full md:w-auto opacity-0 animate-slide-in [animation-delay:1s]">
               <Button 
-                className="shine-btn w-full md:w-auto text-base md:text-lg py-6 px-8 rounded-xl animate-pulse-glow bg-green-500 hover:bg-green-600"
+                className="shine-btn w-full md:w-auto text-base py-4 px-6 md:py-6 md:px-8 rounded-xl animate-pulse-glow bg-green-500 hover:bg-green-600 whitespace-normal"
                 onClick={scrollToPricing}
               >
                 QUERO TRANSFORMAR MEU CÃO AGORA
@@ -79,11 +79,7 @@ const Hero = () => {
           
           <div ref={imageRef} className="order-1 md:order-2 flex justify-center md:justify-end opacity-0 animate-slide-in [animation-delay:0.5s] hidden md:block">
             <div className="relative">
-              <img 
-                src="https://i.ibb.co/GvG8xYx3/dog03333.webp" 
-                alt="Cachorro calmo e equilibrado" 
-                className="w-full max-w-md rounded-xl shadow-2xl animate-float"
-              />
+              <div className="w-full max-w-md rounded-xl shadow-2xl animate-float h-64 bg-gradient-to-br from-dog-primary/20 to-dog-secondary/20"></div>
               <div className="absolute -bottom-4 -right-4 bg-gradient-to-r from-dog-primary to-dog-secondary p-3 rounded-lg shadow-lg transform rotate-3">
                 <span className="text-lg font-bold">Transformação Total</span>
               </div>
