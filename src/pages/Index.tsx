@@ -7,6 +7,7 @@ import TestimonialsSection from '../components/TestimonialsSection';
 import PricingSection from '../components/PricingSection';
 import BonusSection from '../components/BonusSection';
 import Footer from '../components/Footer';
+import CountdownTimer from '../components/CountdownTimer';
 
 const Index = () => {
   useEffect(() => {
@@ -29,14 +30,12 @@ const Index = () => {
       s.parentNode.insertBefore(t, s);
     })(window, document, 'script', 'https://connect.facebook.net/pt_BR/fbevents.js');
 
-    // @ts-ignore
-    fbq('init', '2722539714571248', {
+    // Use optional chaining to safely call fbq functions
+    window.fbq?.('init', '2722539714571248', {
       em: 'insert_email_variable' // Optional for advanced matching
     });
-    // @ts-ignore
-    fbq('track', 'PageView');
-    // @ts-ignore
-    fbq('track', 'ViewContent');
+    window.fbq?.('track', 'PageView');
+    window.fbq?.('track', 'ViewContent');
 
     // Intersection Observer to animate sections as they come into view
     const observer = new IntersectionObserver(
@@ -80,6 +79,7 @@ const Index = () => {
 
   return (
     <div className="min-h-screen w-full">
+      <CountdownTimer />
       <Hero />
       <ProblemsSection />
       <FeaturesSection />
