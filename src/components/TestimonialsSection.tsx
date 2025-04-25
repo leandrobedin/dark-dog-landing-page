@@ -100,17 +100,25 @@ const TestimonialsSection = () => {
   return (
     <section className="w-full py-16 md:py-24 overflow-hidden">
       <div className="section-wrapper">
-        <h2 className="section-title">
+        <h2 className="section-title text-3xl md:text-4xl">
           👥 Veja Quem Já Transformou a Vida com o Cão Sem Stress™
         </h2>
         
+        <div className="flex justify-center mb-6">
+          <img 
+            src="https://i.ibb.co/PG8Z7JkK/dog444.webp"
+            alt="Donos felizes com cachorro calmo"
+            className="w-full max-w-lg rounded-xl shadow-xl"
+          />
+        </div>
+        
         <div 
-          className="relative h-[400px] md:h-[300px]"
+          className="relative h-[450px] md:h-[350px] mt-12"
           onTouchStart={handleTouchStart}
           onTouchMove={handleTouchMove}
           onTouchEnd={handleTouchEnd}
         >
-          <div className="absolute left-0 top-12 bottom-0 right-0 flex items-center justify-center">
+          <div className="absolute left-0 top-0 bottom-16 right-0 flex items-center justify-center">
             {getVisibleTestimonials().map((testimonial, index) => {
               const position = 'position' in testimonial ? testimonial.position : 0;
               let positionClass = 'translate-x-0 scale-100 z-20 opacity-100';

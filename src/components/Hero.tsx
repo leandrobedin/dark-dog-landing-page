@@ -2,9 +2,14 @@
 import React, { useEffect, useRef } from 'react';
 import { CheckCircle } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import CountdownTimer from './CountdownTimer';
 
 const Hero = () => {
   const imageRef = useRef<HTMLDivElement>(null);
+
+  const scrollToPricing = () => {
+    document.getElementById('pricing')?.scrollIntoView({behavior: 'smooth'});
+  };
 
   useEffect(() => {
     const handleScroll = () => {
@@ -25,6 +30,8 @@ const Hero = () => {
       <div className="absolute inset-0 bg-hero-pattern opacity-20"></div>
       
       <div className="container px-4 py-16 md:py-24 flex flex-col items-center">
+        <CountdownTimer />
+        
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16 items-center">
           <div className="order-2 md:order-1 flex flex-col items-center md:items-start">
             <div className="mb-6 opacity-0 animate-slide-in [animation-delay:0.2s]">
@@ -44,7 +51,7 @@ const Hero = () => {
                 {["Sem pagar adestradores caros", "Sem usar medicamentos", "Sem precisar sair de casa"].map((item, index) => (
                   <li key={index} className="flex items-center gap-3">
                     <CheckCircle className="h-5 w-5 text-dog-primary flex-shrink-0" />
-                    <span className="text-gray-300">{item}</span>
+                    <span className="text-gray-300 text-base md:text-lg">{item}</span>
                   </li>
                 ))}
               </ul>
@@ -52,8 +59,8 @@ const Hero = () => {
             
             <div className="w-full md:w-auto opacity-0 animate-slide-in [animation-delay:1s]">
               <Button 
-                className="shine-btn w-full md:w-auto text-lg py-7 px-10 rounded-xl animate-pulse-glow"
-                onClick={() => document.getElementById('pricing')?.scrollIntoView({behavior: 'smooth'})}
+                className="shine-btn w-full md:w-auto text-base md:text-lg py-6 px-8 rounded-xl animate-pulse-glow"
+                onClick={scrollToPricing}
               >
                 QUERO TRANSFORMAR MEU CÃO AGORA
               </Button>

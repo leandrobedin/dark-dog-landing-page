@@ -6,7 +6,7 @@ const ProblemsSection = () => {
   return (
     <section className="w-full py-16 md:py-24">
       <div className="section-wrapper">
-        <h2 className="section-title">
+        <h2 className="section-title text-3xl md:text-4xl">
           👊🏼 Cansado de ter um cachorro descontrolado?
         </h2>
         
@@ -19,7 +19,7 @@ const ProblemsSection = () => {
                 </svg>
               </div>
               <h3 className="text-xl font-bold mb-2">Latidos Incessantes</h3>
-              <p className="text-gray-400">Seu cachorro late como se visse fantasma o dia inteiro?</p>
+              <p className="text-gray-400 text-base md:text-lg">Seu cachorro late como se visse fantasma o dia inteiro?</p>
             </div>
             
             <div className="glass-card p-6 rounded-xl hover:bg-dog-primary/10 transition-all duration-300 transform hover:-translate-y-2">
@@ -29,7 +29,7 @@ const ProblemsSection = () => {
                 </svg>
               </div>
               <h3 className="text-xl font-bold mb-2">Destruição Total</h3>
-              <p className="text-gray-400">Destrói móveis, sapatos, paredes e até sua paciência?</p>
+              <p className="text-gray-400 text-base md:text-lg">Destrói móveis, sapatos, paredes e até sua paciência?</p>
             </div>
             
             <div className="glass-card p-6 rounded-xl hover:bg-dog-primary/10 transition-all duration-300 transform hover:-translate-y-2">
@@ -39,7 +39,7 @@ const ProblemsSection = () => {
                 </svg>
               </div>
               <h3 className="text-xl font-bold mb-2">Zero Obediência</h3>
-              <p className="text-gray-400">Parece que tá possuído e não obedece nem gritando?</p>
+              <p className="text-gray-400 text-base md:text-lg">Parece que tá possuído e não obedece nem gritando?</p>
             </div>
           </div>
           
@@ -49,12 +49,28 @@ const ProblemsSection = () => {
         </div>
         
         <div className="glass-card p-6 md:p-10 rounded-2xl opacity-0 animate-slide-in [animation-delay:0.2s]">
-          <h2 className="text-2xl md:text-3xl font-bold mb-8 text-center">
-            🚨 Apresentando: <span className="text-gradient">CÃO SEM STRESS™</span>
-          </h2>
-          <h3 className="text-xl md:text-2xl font-semibold mb-6 text-center">
-            O Protocolo de 7 Dias Que Vai Salvar Seu Lar
-          </h3>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center mb-10">
+            <div>
+              <h2 className="text-2xl md:text-3xl font-bold mb-8 text-center md:text-left">
+                🚨 Apresentando: <span className="text-gradient">CÃO SEM STRESS™</span>
+              </h2>
+              <h3 className="text-xl md:text-2xl font-semibold mb-6 text-center md:text-left">
+                O Protocolo de 7 Dias Que Vai Salvar Seu Lar
+              </h3>
+              
+              <p className="text-base md:text-lg mb-6 text-gray-300">
+                Desenvolvido por especialistas em comportamento canino, este protocolo 
+                já transformou mais de 9.700 cães problemáticos em animais equilibrados e felizes.
+              </p>
+            </div>
+            <div className="flex justify-center md:justify-end">
+              <img 
+                src="https://i.ibb.co/995Cg1cz/dog0222.webp"
+                alt="Cachorro feliz após o tratamento"
+                className="rounded-xl shadow-xl max-w-xs md:max-w-sm w-full object-cover h-64"
+              />
+            </div>
+          </div>
           
           <div className="flex flex-col md:flex-row justify-center gap-8 mt-10">
             <div className="flex-1 glass-card p-6 rounded-xl border border-red-500/20 bg-red-900/10">
@@ -65,19 +81,19 @@ const ProblemsSection = () => {
               <ul className="space-y-3">
                 <li className="flex items-start gap-2">
                   <X className="h-4 w-4 text-red-500 mt-1 flex-shrink-0" />
-                  <span>Adestradores caros que cobram fortuna</span>
+                  <span className="text-base md:text-lg">Adestradores caros que cobram fortuna</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <X className="h-4 w-4 text-red-500 mt-1 flex-shrink-0" />
-                  <span>Medicamentos com efeitos colaterais</span>
+                  <span className="text-base md:text-lg">Medicamentos com efeitos colaterais</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <X className="h-4 w-4 text-red-500 mt-1 flex-shrink-0" />
-                  <span>Métodos que levam meses para funcionar</span>
+                  <span className="text-base md:text-lg">Métodos que levam meses para funcionar</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <X className="h-4 w-4 text-red-500 mt-1 flex-shrink-0" />
-                  <span>Teorias complicadas que não funcionam</span>
+                  <span className="text-base md:text-lg">Teorias complicadas que não funcionam</span>
                 </li>
               </ul>
             </div>
@@ -90,19 +106,19 @@ const ProblemsSection = () => {
               <ul className="space-y-3">
                 <li className="flex items-start gap-2">
                   <Check className="h-4 w-4 text-dog-primary mt-1 flex-shrink-0" />
-                  <span>Método rápido, simples e direto</span>
+                  <span className="text-base md:text-lg">Método rápido, simples e direto</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <Check className="h-4 w-4 text-dog-primary mt-1 flex-shrink-0" />
-                  <span>Resultados em apenas 7 dias (ou menos)</span>
+                  <span className="text-base md:text-lg">Resultados em apenas 7 dias (ou menos)</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <Check className="h-4 w-4 text-dog-primary mt-1 flex-shrink-0" />
-                  <span>Sem medicamentos, apenas técnicas naturais</span>
+                  <span className="text-base md:text-lg">Sem medicamentos, apenas técnicas naturais</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <Check className="h-4 w-4 text-dog-primary mt-1 flex-shrink-0" />
-                  <span>Apenas 15-20 minutos por dia de aplicação</span>
+                  <span className="text-base md:text-lg">Apenas 15-20 minutos por dia de aplicação</span>
                 </li>
               </ul>
             </div>
