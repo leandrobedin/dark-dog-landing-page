@@ -35,7 +35,7 @@ const PricingSection = () => {
         <div className="max-w-4xl mx-auto">
           <div className="glass-card p-8 md:p-12 rounded-2xl border border-dog-primary/30 mb-12 relative overflow-hidden opacity-0 animate-slide-in">
             {/* Price tag */}
-            <div className="absolute top-0 md:top-6 right-0 md:right-6 glass-card bg-gradient-to-r from-dog-primary to-dog-secondary p-3 md:p-4 rounded-xl transform rotate-3 shadow-lg z-10 mt-2 mr-2 md:mt-0 md:mr-0">
+            <div className="absolute top-0 md:top-6 right-0 md:right-6 glass-card bg-gradient-to-r from-dog-primary to-dog-secondary p-3 md:p-4 rounded-xl transform rotate-3 shadow-lg z-10 mt-12 mr-2 md:mt-0 md:mr-0">
               <div className="text-center">
                 <div className="text-base md:text-lg font-medium mb-1">Apenas</div>
                 <div className="text-3xl md:text-4xl font-bold mb-1">R$27</div>
@@ -43,7 +43,7 @@ const PricingSection = () => {
               </div>
             </div>
             
-            <div className="mb-12 max-w-2xl mt-16 md:mt-0">
+            <div className="mb-12 max-w-2xl mt-32 md:mt-0">
               <h3 className="text-2xl font-bold mb-4">Menos que:</h3>
               <ul className="space-y-3">
                 <li className="flex items-start gap-3">
@@ -65,22 +65,6 @@ const PricingSection = () => {
                   <span className="text-base md:text-lg">O estresse mental de viver no caos</span>
                 </li>
               </ul>
-            </div>
-            
-            <div className="mb-12">
-              <h3 className="text-2xl font-bold mb-6">🎁 Bônus Exclusivos:</h3>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                {bonuses.map((bonus, index) => (
-                  <div key={index} className="glass-card p-6 rounded-xl flex gap-3 items-start">
-                    <div className="h-12 w-12 bg-dog-secondary/20 rounded-full flex items-center justify-center text-dog-secondary flex-shrink-0">
-                      <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v13m0-13V6a4 4 0 118 0v7M5 8h14M5 8a2 2 0 110-4h14a2 2 0 110 4M5 8v12a2 2 0 002 2h10a2 2 0 002-2V8" />
-                      </svg>
-                    </div>
-                    <div className="text-base md:text-lg">{bonus}</div>
-                  </div>
-                ))}
-              </div>
             </div>
             
             <div className="mb-12">
@@ -111,7 +95,7 @@ const PricingSection = () => {
                 </p>
               </div>
               
-              <Button className="shine-btn w-full sm:w-auto py-6 px-8 text-base md:text-lg rounded-xl animate-pulse-glow overflow-visible whitespace-normal">
+              <Button className="shine-btn w-full sm:w-auto py-6 px-8 text-base md:text-lg rounded-xl animate-pulse-glow overflow-hidden whitespace-normal bg-green-500 hover:bg-green-600">
                 QUERO O CÃO SEM STRESS™ – R$27 NO PIX
               </Button>
               
@@ -179,7 +163,7 @@ const PricingSection = () => {
             </blockquote>
             
             <Button 
-              className="shine-btn text-base md:text-lg py-6 px-8 rounded-xl"
+              className="shine-btn text-base md:text-lg py-6 px-8 rounded-xl bg-green-500 hover:bg-green-600"
               onClick={scrollToPricing}
             >
               QUERO O CÃO SEM STRESS™ – R$27 NO PIX

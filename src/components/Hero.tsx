@@ -2,7 +2,6 @@
 import React, { useEffect, useRef } from 'react';
 import { CheckCircle } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-import CountdownTimer from './CountdownTimer';
 
 const Hero = () => {
   const imageRef = useRef<HTMLDivElement>(null);
@@ -30,8 +29,6 @@ const Hero = () => {
       <div className="absolute inset-0 bg-hero-pattern opacity-20"></div>
       
       <div className="container px-4 py-16 md:py-24 flex flex-col items-center">
-        <CountdownTimer />
-        
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16 items-center">
           <div className="order-2 md:order-1 flex flex-col items-center md:items-start">
             <div className="mb-6 opacity-0 animate-slide-in [animation-delay:0.2s]">
@@ -46,6 +43,19 @@ const Hero = () => {
               Um método rápido, simples e direto para transformar seu cachorro descontrolado em um cão calmo e obediente
             </p>
             
+            <div className="w-full flex justify-center md:justify-start opacity-0 animate-slide-in [animation-delay:0.5s] mb-8">
+              <div className="relative">
+                <img 
+                  src="https://i.ibb.co/TM5fQPWF/dog01.png" 
+                  alt="Cachorro calmo e equilibrado" 
+                  className="w-full max-w-md rounded-xl shadow-2xl animate-float"
+                />
+                <div className="absolute -bottom-4 -right-4 bg-gradient-to-r from-dog-primary to-dog-secondary p-3 rounded-lg shadow-lg transform rotate-3">
+                  <span className="text-lg font-bold">7 Dias de Resultados</span>
+                </div>
+              </div>
+            </div>
+            
             <div className="mb-8 opacity-0 animate-slide-in [animation-delay:0.8s]">
               <ul className="space-y-4">
                 {["Sem pagar adestradores caros", "Sem usar medicamentos", "Sem precisar sair de casa"].map((item, index) => (
@@ -59,7 +69,7 @@ const Hero = () => {
             
             <div className="w-full md:w-auto opacity-0 animate-slide-in [animation-delay:1s]">
               <Button 
-                className="shine-btn w-full md:w-auto text-base md:text-lg py-6 px-8 rounded-xl animate-pulse-glow"
+                className="shine-btn w-full md:w-auto text-base md:text-lg py-6 px-8 rounded-xl animate-pulse-glow bg-green-500 hover:bg-green-600"
                 onClick={scrollToPricing}
               >
                 QUERO TRANSFORMAR MEU CÃO AGORA
@@ -67,15 +77,15 @@ const Hero = () => {
             </div>
           </div>
           
-          <div ref={imageRef} className="order-1 md:order-2 flex justify-center md:justify-end opacity-0 animate-slide-in [animation-delay:0.5s]">
+          <div ref={imageRef} className="order-1 md:order-2 flex justify-center md:justify-end opacity-0 animate-slide-in [animation-delay:0.5s] hidden md:block">
             <div className="relative">
               <img 
-                src="https://i.ibb.co/TM5fQPWF/dog01.png" 
+                src="https://i.ibb.co/GvG8xYx3/dog03333.webp" 
                 alt="Cachorro calmo e equilibrado" 
                 className="w-full max-w-md rounded-xl shadow-2xl animate-float"
               />
               <div className="absolute -bottom-4 -right-4 bg-gradient-to-r from-dog-primary to-dog-secondary p-3 rounded-lg shadow-lg transform rotate-3">
-                <span className="text-lg font-bold">7 Dias de Resultados</span>
+                <span className="text-lg font-bold">Transformação Total</span>
               </div>
             </div>
           </div>
