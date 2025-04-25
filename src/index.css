@@ -96,9 +96,9 @@
     @apply text-3xl md:text-4xl font-bold text-center mb-12 text-gradient;
   }
   
-  /* Add this class to ensure buttons work properly on mobile */
+  /* Melhorar botões na versão mobile */
   .btn-mobile-friendly {
-    @apply whitespace-normal break-words;
+    @apply whitespace-normal break-words py-5 px-6;
   }
 }
 

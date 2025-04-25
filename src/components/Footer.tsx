@@ -20,7 +20,7 @@ const Footer = () => {
           />
           
           <Button 
-            className="shine-btn text-base py-4 px-6 md:py-6 md:px-8 rounded-xl mb-12 whitespace-normal"
+            className="shine-btn text-base py-5 px-6 md:py-6 md:px-8 rounded-xl mb-12 whitespace-normal"
             onClick={scrollToPricing}
           >
             QUERO MUDAR A VIDA DO MEU CÃO AGORA
